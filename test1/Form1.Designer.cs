@@ -29,18 +29,28 @@ namespace test1
         private void InitializeComponent()
         {
             this.btnTest = new Gizmox.WebGUI.Forms.Button();
+            this.listBox1 = new Gizmox.WebGUI.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(80, 123);
+            this.btnTest.Location = new System.Drawing.Point(47, 118);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(75, 23);
             this.btnTest.TabIndex = 0;
             this.btnTest.Text = "≤‚ ‘";
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.Location = new System.Drawing.Point(172, 118);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(180, 173);
+            this.listBox1.TabIndex = 1;
             // 
             // Form1
             // 
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnTest);
             this.Size = new System.Drawing.Size(644, 473);
             this.Text = "Form1";
@@ -51,5 +61,6 @@ namespace test1
         #endregion
 
         private Gizmox.WebGUI.Forms.Button btnTest;
+        private Gizmox.WebGUI.Forms.ListBox listBox1;
     }
 }

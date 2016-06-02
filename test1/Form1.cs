@@ -20,5 +20,10 @@ namespace test1
         {
             InitializeComponent();
         }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("12233");
+        }
     }
 }

@@ -24,6 +24,7 @@ namespace test1
         private void btnTest_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add("12233");
+            listBox1.Items.Add("12233");
         }
     }
 }

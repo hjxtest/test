@@ -29,7 +29,8 @@ namespace test1
         private void InitializeComponent()
         {
             this.btnTest = new Gizmox.WebGUI.Forms.Button();
-            this.listBox1 = new Gizmox.WebGUI.Forms.ListBox();
+            this.button1 = new Gizmox.WebGUI.Forms.Button();
+            this.chart1 = new Gizmox.WebGUI.Forms.Charts.Chart();
             this.SuspendLayout();
             // 
             // btnTest
@@ -41,16 +42,33 @@ namespace test1
             this.btnTest.Text = "≤‚ ‘";
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
-            // listBox1
+            // button1
             // 
-            this.listBox1.Location = new System.Drawing.Point(172, 118);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(180, 173);
-            this.listBox1.TabIndex = 1;
+            this.button1.Location = new System.Drawing.Point(47, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "»°œ˚";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // chart1
+            // 
+            this.chart1.AnimationEnabled = false;
+            this.chart1.AxisX = null;
+            this.chart1.AxisY = null;
+            this.chart1.ColorSet = null;
+            this.chart1.Location = new System.Drawing.Point(178, 115);
+            this.chart1.Name = "chart1";
+            this.chart1.Size = new System.Drawing.Size(184, 151);
+            this.chart1.TabIndex = 3;
+            this.chart1.Theme = Gizmox.WebGUI.Forms.Charts.ThemeTypes.Theme1;
+            this.chart1.Title = null;
+            this.chart1.View3D = false;
             // 
             // Form1
             // 
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTest);
             this.Size = new System.Drawing.Size(644, 473);
             this.Text = "Form1";
@@ -61,6 +79,7 @@ namespace test1
         #endregion
 
         private Gizmox.WebGUI.Forms.Button btnTest;
-        private Gizmox.WebGUI.Forms.ListBox listBox1;
+        private Gizmox.WebGUI.Forms.Button button1;
+        private Gizmox.WebGUI.Forms.Charts.Chart chart1;
     }
 }
